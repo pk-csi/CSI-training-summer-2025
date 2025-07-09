@@ -14,7 +14,7 @@ namespace Movies.Application
             builder.ConfigureServices((context, services) =>
             {
                 services.AddDbContext<MoviesDbContext>(options => {
-                    options.UseSqlServer("Server=(LocalDB)\\.;Database=MoviesDb;Trusted_Connection=True;TrustServerCertificate=True;");
+                    options.UseSqlServer("Server=.\\SQLEXPRESS;Database=MoviesDb;Trusted_Connection=True;TrustServerCertificate=True;");
                 });
             });
 
